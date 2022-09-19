@@ -15,7 +15,6 @@ export default function App() {
   const netAlert = NetInfo.addEventListener((networkState) => {
     isConnecte = networkState.isConnected;
   });
-
   if (!isLoadingComplete || isConnecte === false) {
     return (
       <SafeAreaProvider>
